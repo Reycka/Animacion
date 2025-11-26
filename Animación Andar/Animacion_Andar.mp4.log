@@ -1,0 +1,6 @@
+C:/Program Files/Krita (x64)/bin/ffmpeg.exe -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i C:/Users/david/OneDrive/Escritorio/Carrera/3Âº/1er Semestre/Animacion/2D/AnimaciÃ³n Andar/fotograma%04d.png -c:v libopenh264 -b:v 5000k C:/Users/david/OneDrive/Escritorio/Carrera/3Âº/1er Semestre/Animacion/2D/AnimaciÃ³n Andar/Animacion_Andar.mp4
+=====================================================
+[image2 @ 000001cdc2ee2c40] Could find no file with path 'C:/Users/david/OneDrive/Escritorio/Carrera/3º/1er Semestre/Animacion/2D/Animación Andar/fotograma%04d.png' and index in the range 0-0
+[in#0 @ 000001cdc2eda640] Error opening input: No such file or directory
+Error opening input file C:/Users/david/OneDrive/Escritorio/Carrera/3º/1er Semestre/Animacion/2D/Animación Andar/fotograma%04d.png.
+Error opening input files: No such file or directory
