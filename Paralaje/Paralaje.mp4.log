@@ -1,0 +1,20 @@
+/usr/bin/ffmpeg -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i /home/davidbenitoaller/Escritorio/Animacion/Paralaje/fotograma%04d.png -c:v libopenh264 -b:v 5000k /home/davidbenitoaller/Escritorio/Animacion/Paralaje/Paralaje.mp4
+=====================================================
+Input #0, image2, from '/home/davidbenitoaller/Escritorio/Animacion/Paralaje/fotograma%04d.png':
+  Duration: 00:00:01.92, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 2480x3508 [SAR 11811:11811 DAR 620:877], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+Press [q] to stop, [?] for help
+[libopenh264 @ 0x5601ba2a64c0] [OpenH264] this = 0x0x7fbcbc004c70, Warning:layerId(0) doesn't support profile(578), change to UNSPECIFIC profile
+[libopenh264 @ 0x5601ba2a64c0] [OpenH264] this = 0x0x7fbcbc004c70, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, mp4, to '/home/davidbenitoaller/Escritorio/Animacion/Paralaje/Paralaje.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 2480x3508 [SAR 1:1 DAR 620:877], q=2-31, 5000 kb/s, 24 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 libopenh264
+      Side data:
+        cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+frame=    5 fps=0.0 q=-0.0 size=       0KiB time=00:00:00.20 bitrate=   1.8kbits/s speed=0.416x    frame=   39 fps= 39 q=-0.0 size=     256KiB time=00:00:01.62 bitrate=1290.8kbits/s speed=1.62x    [out#0/mp4 @ 0x5601ba2a7480] video:366KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.276327%
+frame=   48 fps= 44 q=-0.0 Lsize=     367KiB time=00:00:02.00 bitrate=1503.8kbits/s speed=1.82x    

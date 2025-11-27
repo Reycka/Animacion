@@ -1,0 +1,20 @@
+/usr/bin/ffmpeg -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i /home/davidbenitoaller/Escritorio/Animacion/Animación correr/fotograma%04d.png -c:v libopenh264 -b:v 5000k /home/davidbenitoaller/Escritorio/Animacion/Animación correr/Animacion_Correr_Color.mkv
+=====================================================
+Input #0, image2, from '/home/davidbenitoaller/Escritorio/Animacion/Animación correr/fotograma%04d.png':
+  Duration: 00:00:00.96, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 3508x2480 [SAR 11811:11811 DAR 877:620], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libopenh264))
+Press [q] to stop, [?] for help
+[libopenh264 @ 0x558211516540] [OpenH264] this = 0x0x7f2dfc004c70, Warning:layerId(0) doesn't support profile(578), change to UNSPECIFIC profile
+[libopenh264 @ 0x558211516540] [OpenH264] this = 0x0x7f2dfc004c70, Warning:bEnableFrameSkip = 0,bitrate can't be controlled for RC_QUALITY_MODE,RC_BITRATE_MODE and RC_TIMESTAMP_MODE without enabling skip frame.
+Output #0, matroska, to '/home/davidbenitoaller/Escritorio/Animacion/Animación correr/Animacion_Correr_Color.mkv':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (H264 / 0x34363248), yuv420p(tv, progressive), 3508x2480 [SAR 1:1 DAR 877:620], q=2-31, 5000 kb/s, 24 fps, 1k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 libopenh264
+      Side data:
+        cpb: bitrate max/min/avg: 5000000/0/5000000 buffer size: 0 vbv_delay: N/A
+frame=    9 fps=0.0 q=-0.0 size=       1KiB time=00:00:00.37 bitrate=  12.3kbits/s speed=0.75x    [out#0/matroska @ 0x5582115174c0] video:530KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.146800%
+frame=   24 fps=0.0 q=-0.0 Lsize=     531KiB time=00:00:01.00 bitrate=4349.7kbits/s speed=1.35x    
